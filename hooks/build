@@ -1,0 +1,2 @@
+#!/bin/bash
+docker build --build-arg GROUP_ID=$GROUP_ID --build-arg USER_ID=$USER_ID -t $IMAGE_NAME .
