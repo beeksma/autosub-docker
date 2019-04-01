@@ -34,7 +34,7 @@ services:
 
 ## Building
 
-You can either use the image available on [Docker Hub](https://cloud.docker.com/repository/docker/beeksma/autosub), or you can build it yourself. You'll need to specify the UID and GID you want to use for the local user (defaults on Docker Hub are 1000).
+You can either use the image available on [Docker Hub](https://hub.docker.com/r/beeksma/autosub), or you can build it yourself. You'll need to specify the UID and GID you want to use for the local user (defaults on Docker Hub are 1000).
 For example, if you want to use UID 1001 and GID 1002, run the following command in the folder with the DockerFile
 ```
   docker build --build-arg USER_ID=1001 --build-arg GROUP_ID=1002 -t autosub .
