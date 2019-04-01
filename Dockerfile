@@ -15,6 +15,7 @@ RUN apk update && apk add shadow python2 py2-cheetah py2-six && \
 	wget https://github.com/BenjV/autosub/archive/master.zip && \
 	unzip master.zip -d /opt && rm master.zip && \
 	touch /opt/autosub-master/config.properties && \
+	touch /opt/autosub-master/AutoSubService.log && \
 	chown -R ${USER_ID}:${GROUP_ID} /opt/autosub-master
 
 # Adds local user
